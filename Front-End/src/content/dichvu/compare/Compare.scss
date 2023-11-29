@@ -1,0 +1,143 @@
+/* Compare.scss */
+.compare-container {
+  padding: 10px;
+  max-width: 1000px;
+  margin: 70px auto;
+  padding-bottom: 40px;
+
+}
+
+.compare-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+} 
+
+.compare-product-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.compare-product-table th,
+.compare-product-table td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+
+.compare-table-header {
+  padding: 12px 15px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #3498db;
+  color: white;
+}
+
+.compare-table-body{
+  background-color: #F0F0F0;
+}
+
+.compare-product-name {
+  font-weight: bold;
+}
+
+.compare-product-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+}
+.compare-product-image img{
+  max-width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.pagination{
+  margin-left: 320px;
+  margin-bottom: 30px;
+}
+
+// .table-compare-property img{
+//   width: 4rem;
+//   height: 4rem;
+// }
+.compare-product-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.table-compare {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+
+  .table-compare-header {
+    background-color: #2e2929;
+    color: black;
+
+    th {
+      padding: 12px 15px;
+      text-align: center;
+      font-weight: bold;
+      
+    }
+    .header-button {
+      text-align: right;
+    }
+
+    .header-button button {
+      margin-left: auto;
+    }
+
+    .compare-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .compare-product-name {
+        font-weight: bold;
+        color: white;
+      }
+    }
+  }
+
+  .table-compare-body {
+    text-align-last: center;
+
+    tr:nth-child(even) {
+      background-color: #F5F5F5;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #d2d9dd;
+    }
+
+    td {
+      padding: 10px 15px;
+      border: 1px solid #2B3A42;
+
+      img {
+        max-width: 100px;
+        height: auto;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.table-compare th,
+.table-compare td {
+  text-align: center;
+  padding: 10px;
+}
+
+.table-compare th,
+.table-compare td {
+  border: 1px solid #ddd;
+}

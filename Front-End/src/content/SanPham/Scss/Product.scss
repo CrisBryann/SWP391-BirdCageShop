@@ -1,0 +1,116 @@
+// Variables
+$card-padding: 12px;
+$card-img-height: 140px;
+$primary-color: #007bff;
+
+// Placeholders
+%reset-padding {
+    padding: 0;
+}
+
+%truncate-text {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+// Card
+.product-card {
+    font-family: 'Roboto Slab';
+
+    // Card Body
+    .card-body {
+        position: relative;
+
+
+        /* Add a smooth transition effect */
+        abbr[title] {
+            text-decoration: none;
+        }
+
+
+
+        // Product Image 
+        .card-product {
+
+            padding-bottom: 0;
+            white-space: 'nowrap';
+            overflow: 'hidden';
+
+            img {
+                height: 100%;
+            }
+           
+        }
+
+        // Content
+        .card-content {
+            padding-bottom: 0;
+            cursor: pointer;
+
+            // Product Name
+            .card-title {
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+
+            // Product Details
+            .card-info {
+
+                // Product Code
+                .card-text {
+                    font-size: 0.9rem;
+                    color: black;
+                    text-decoration: none;
+                }
+
+                // Price
+                .card-price {
+                    font-weight: 600;
+                    color: $primary-color;
+                }
+
+                // Accessories
+                .accessory-item {
+                    .sub-access {
+                        font-size: 0.8rem;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        // Actions
+        .card-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .button {
+                @extend %reset-padding;
+
+                &:first-child {
+                    padding-right: 20px;
+                }
+
+                &:last-child {
+                    padding-left: 20px;
+                }
+            }
+        }
+
+    }
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add your desired box shadow values */
+    transition: box-shadow 0.3s ease;
+    /* Add a smooth transition effect */
+
+    &:hover {
+        box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
+        /* Add a different box shadow on hover */
+       
+    }
+}
+#addtocart{
+    background-color:#c96019;
+}

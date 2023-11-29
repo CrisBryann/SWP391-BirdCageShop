@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: 'Exo', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            border-collapse: collapse;
+            border-radius: 3px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .header {
+            background-color: #53d2db;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2,
+        p {
+            margin-bottom: 15px;
+        }
+
+        a.button {
+            color: #fff !important;
+            background-color: #53d2db;
+            padding: 15px 50px;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        a.button:hover {
+            background-color: #1fb5c0;
+            /* Make the button brighter on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        table.order-details {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table.order-details th,
+        table.order-details td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table.order-details th {
+            background-color: #53d2db;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+<table>
+    <tr>
+        <td class="header">
+            <a href="#">
+                <img src="https://static.vecteezy.com/system/resources/previews/008/462/030/non_2x/minimalist-simple-bird-home-logo-design-free-vector.jpg"
+                     alt="logo" title='LOGO'>
+            </a>
+            <p>Thank you for your interest in our products</p>
+            <p>Please review the information again</p>
+            <div>
+                <p>Your Order ID: [[orderId]]</p>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="content">
+            <div id="orderDetailsPlaceholder">
+                <h2> Here are the order details: </h2>
+                <table class="order-details">
+                    <thead>
+                    <tr>
+                        <th style="max-width: 100px; max-height: 100px;">Image</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    [[orderDetails]]
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <h2> Here are your costs: </h2>
+                <table class="order-details">
+                    <thead>
+                    <tr>
+                        <th>Total discount amount</th>
+                        <th>Total Amount to Pay</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    [[order]]
+                    </tbody>
+                </table>
+            </div>
+            <h3>If you agree to purchase, click here to redirect to the payment page</h3>
+
+            <a href="http://localhost:3000/pay/[[orderId]]" class="button">CONFIRM</a>
+
+        </td>
+    </tr>
+</table>
+</body>
+
+</html>

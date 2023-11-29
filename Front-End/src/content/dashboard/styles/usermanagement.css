@@ -1,0 +1,95 @@
+/* Assuming you have a global reset or normalize.css */
+body {
+  font-family: 'Exo', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.user-management-page {
+  max-width: 100%;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-add-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-name {
+  display: flex;
+  align-items: center;
+}
+
+.search-text {
+  margin-right: 50px;
+}
+
+.reset-button {
+  padding: 50px;
+}
+
+.btn-add {
+  text-align: right;
+}
+
+.action-bar {
+  margin-top: 20px;
+}
+
+.add-staff-btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow-x: auto;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-management-header,
+.user-management-td {
+  padding: 12px;
+  text-align: left;
+  width: auto; /* Adjusted width to fit content */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis; /* Show ellipsis for long content */
+}
+
+.user-management-header {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.user-table tbody tr:nth-child(odd) .user-management-td {
+  background-color: #f9f6f6;
+}
+
+.delete-btn {
+  margin-left: 5px;
+}
+
+.img-user-management {
+  max-width: 60px;  
+  height:60px;
+  border-radius: 50%;
+}

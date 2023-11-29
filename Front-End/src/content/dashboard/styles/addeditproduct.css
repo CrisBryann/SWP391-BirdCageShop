@@ -1,0 +1,45 @@
+.add-edit-product-container {
+  background-color: white;
+}
+
+.editpro{
+  margin-top: 80px;
+    margin-bottom: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+
+.add-edit-pro {
+  max-width: 500px; /* Giới hạn chiều rộng của form */
+  margin: 0 auto 100px auto; /* Canh giữa form */
+  border:3px solid black;
+  padding: 30px;
+}
+
+.form-add-edit-pro {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.form-outline {
+  position: relative;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.button-pro {
+  margin-top: 15px;
+}
